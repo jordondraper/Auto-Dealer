@@ -458,6 +458,14 @@ nav a:hover {
   color: #11570b;
   padding: 16px;
   margin: 0;
+  font-size: 3rem;
+}
+#mainWrapper .para p {
+  color: #11570b;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 5rem;
+  padding: 16px;
 }
 #mainWrapper .carHero {
   position: relative;
