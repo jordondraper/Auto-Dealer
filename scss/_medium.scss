@@ -7,8 +7,11 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 
-nav {
-
+  nav {
+    
+    button {
+        display: none;
+    }
     ul {
         display: flex;
     } // end ul
@@ -17,3 +20,21 @@ nav {
     }
 
 } // end nav
+
+.allcards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gutter;
+    section {
+        flex-basis: calc(50% - (($gutter/2)));
+    }
+}
+
+.allcards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gutter;
+    section {
+        flex-basis: calc(50% - (($gutter/2)));
+    }
+}

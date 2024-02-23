@@ -7,7 +7,21 @@ header, nav, main, footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+
+  
   nav ul li a {
     padding: .7rem 2rem;
     font-size: .8rem;
   } // end nav
+
+  .allcards {
+    section {
+        flex-basis: calc(33.333% - ((($gutter*2)/3)));
+    }
+}
+
+#cards {
+  section {
+      flex-basis: calc(33.333% - ((($gutter*2)/3)));
+  }
+}

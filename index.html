@@ -14,11 +14,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 <link href="css/styles.min.css" rel="stylesheet">
 
+
+
+
 <!--Fav Icon Stuff-->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="favicon_io-arch/site.webmanifest">
+<link rel="manifest" href="faviconra/site.webmanifest">
 
 
 </head>
@@ -26,15 +29,20 @@
     
 <div id="headerWrapper">
     <header>
-        <img src="favicon_io-arch/architecture.logo.png" alt="logo" width="75" height="75">
-        <h1 class="gradient-text">Big Architect Services</h1>
+        <img src="roverautologo-assets/favicon.png" alt="logo" width="150" height="75" srcset="roverautologo-assets/logo1x.png 1x, roverautologo-assets/logo2x.png 2x, roverautologo-assets/logo3x.png 3x">
+        <h1>Rover Auto</h1>
+        <div class="contact">
+        <h2>Contact Us:</h2>
+        <p><a href="tel:4354441234">(435)-444-1234</a></p>
+        </div> 
     </header>
 </div>
 
 
 <div id="navWrapper">
     <nav>
-       <ul>
+        <button id="xButton"><span>&#9776;</span><span>x</span></button>
+       <ul id="primaryNav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
@@ -44,8 +52,47 @@
 
 <div id="mainWrapper">
 <main>
-    <h1>Inventory</h1>
+    <div class="carHero">
+        <img src="images/landrover_hero.webp" width="1920" height="1080" alt="carhero">
+        <p>landrover so cool!</p>
+    </div>
+    <h1>Hello World</h1>
+    <div class="allcards">
     
+        <section class="bounce">
+        <img src="svg/car.svg" alt="car" width="75" height="75">
+        <h2>Life-time Warranty</h2>
+        <p>Experience peace of mind with our lifetime warranty on Land Rover cars at Rover Auto dealership, ensuring lasting reliability</p>
+        <a href="#">Learn More</a>
+    </section>
+   
+    <section class="pulse">
+        <img src="svg/svgstart.svg" alt="therm" width="75" height="75">
+        <h2>Regulated Engine Temperature</h2>
+        <p>Rover Auto, a used car dealership, ensures optimal engine performance with a regulated temperature feature for Land Rover cars, ensuring reliability.</p>
+        <a href="#">Learn More</a>
+    </section>
+    
+    <section class="bounce">
+        <img src="svg/svgfunnel.svg" alt="funnel" width="75" height="75">
+        <h2>Maintenance</h2>
+        <p>Rover Auto provides specialized maintenance services for used Land Rover cars, ensuring optimal performance, reliability, and longevity for your vehicle.</p>
+        <a href="#">Learn More</a>
+    </section>
+
+    <section class="spin">
+        <img src="svg/aperture.svg" alt="cam" width="75" height="75">
+        <h2>Car Cam</h2>
+        <p>Rovers Auto ensures every Land Rover purchase includes a standard advanced car camera feature for enhanced safety and convenience on the road.</p>
+        <a href="#">Learn More</a>
+    </section>
+</div>
+
+<div class="reviewWrapper">
+<h2>What our Clients Say</h2>
+<div id="cards"></div> <!--end client cards-->
+</div>
+
 </main>
 </div>
 
@@ -57,6 +104,6 @@
 
 
 </div>
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js" type="module"></script>
 </body>
 </html>
